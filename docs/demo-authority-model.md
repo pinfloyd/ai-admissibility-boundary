@@ -1,93 +1,76 @@
-# Demo authority model
+# Current public demonstration authority model
 
 ## Purpose
 
-This document fixes the evaluation-access model for AI Admissibility Boundary.
+This document describes the current public demonstration contract for AI Admissibility.
 
-The public demonstration path must prove the boundary with a small number of real server-side runs without exposing unrestricted ongoing use.
+The goal is to prove that a real external boundary can decide before a protected effect without exposing unrestricted authority access through the browser.
 
-## Rule of access
+## Canonical identity
 
-The demonstration authority may be used exactly three times.
+The current installed boundary used by the public demonstration is:
 
-Those three runs must prove three distinct outcomes:
+`AI_BOUNDARY_RELEASE_V1`
 
-1. verified allow
-2. verified deny
-3. verified fail-closed behavior
+The official demonstration surface is:
 
-After the third successful demonstration run, further use must be closed and available only under paid access.
+https://ai-admissibility.com/canonical-pilot/
 
-## Commercial boundary
+## Public demonstration rule
 
-The free path is proof access, not free ongoing use.
+The browser is intentionally restricted.
 
-The product is the external authority surface, not the local client wrapper.
+It may submit only the fixed public demonstration scenario exposed by the canonical pilot.
 
-## Isolation requirements
+The browser does not receive:
 
-The demonstration authority must be isolated from paid production authority surfaces.
+- unrestricted authority credentials;
+- direct access to the isolated protected-effect mechanism;
+- a generally open public key endpoint;
+- arbitrary ALLOW capability.
 
-It must use:
+## Public gate behavior
 
-- separate authority endpoint
-- separate key material
-- separate public key
-- separate quota and metering layer
-- separate monitoring and abuse controls
+The current public contract intentionally treats the external gate as protected:
 
-The demonstration authority must never share production custody material.
+- the public identity endpoint is protected;
+- anonymous admission is rejected;
+- the canonical pilot uses a restricted bridge to the installed boundary;
+- the demonstration returns a signed decision before the protected test effect.
 
-## Metering requirements
+A protected or rejected public request is therefore not evidence that the installed boundary is unavailable.
 
-The usage counter must be enforced on the server side only.
+## Current proof shape
 
-Client-side counters are not trusted.
+The live canonical pilot demonstrates a fixed known-DENY case.
 
-The authority must bind metering to an evaluation identity surface such as:
+Separately, the public evidence surface may describe a controlled proof in which one exact signed ALLOW was consumed for one exact isolated effect.
 
-- issued demo credential
-- token
-- repo-bound identifier
-- account-bound identifier
-- token plus rate-limit envelope
+Those two facts must not be generalized into a claim that every deployment is non-bypassable.
 
-## Response model
+## What the public demonstration does not provide
 
-The authority must return low-information responses.
+- no public checkout;
+- no payment or paid-tier transition;
+- no automatic credential or token issuance;
+- no unrestricted general-use authority API;
+- no customer production runtime;
+- no universal safety, security, legal, or compliance guarantee.
 
-It may disclose the decision and a compact reason code, but it must not reveal internal policy structure or sensitive evaluation detail.
+## Real deployment requirement
 
-Recommended outward result classes:
+A real integration needs its own evidence that:
 
-- allow
-- deny
-- verification_failed
-- demo_limit_reached
-- commercial_license_required
+1. the protected action is precisely defined;
+2. admission is evaluated by a separate authority before that action;
+3. the returned decision is verified;
+4. DENY or unverifiable admission blocks execution;
+5. no alternate path bypasses the admission dependency to reach the same protected effect.
 
-## Abuse controls
+## Historical note
 
-The demonstration authority must include:
+Earlier versions of this document described a three-run demonstration authority, demo credentials, metering, and a paid transition.
 
-- rate limiting
-- burst limiting
-- replay resistance where applicable
-- malformed input handling
-- uniform fail-closed behavior on verification failure
+Those ideas belong to an earlier design stage and are not the current public contract.
 
-## Security objective
-
-A public evaluator must be able to prove that the boundary is real.
-
-A non-paying user must not be able to turn the demonstration authority into a free general-use service.
-
-## Non-goals
-
-The demonstration authority is not the full commercial product surface.
-
-It is a proof-of-boundary access layer.
-
-## Release consequence
-
-No public demo release is complete until the three-run limit is technically enforced by the authority itself.
+**No Admission = No Execution.**
