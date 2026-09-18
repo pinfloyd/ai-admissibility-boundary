@@ -1,6 +1,6 @@
 # AI Admissibility Boundary
 
-Public architecture, proof, and evaluation surface for an external pre-execution admission boundary.
+Public architecture, proof, and demonstration surface for an external pre-execution admission boundary.
 
 A scanner reports after or around execution. An admission boundary decides whether execution may continue.
 
@@ -8,9 +8,9 @@ A scanner reports after or around execution. An admission boundary decides wheth
 
 ## Canonical source of truth
 
-Official product and documentation surface: https://ai-admissibility.com/
+Official public product and documentation surface: https://ai-admissibility.com/
 
-This repository is not the canonical installed runtime. It documents and demonstrates the boundary model and links back to the current public product surface.
+This repository is not the canonical installed runtime. It documents and demonstrates the boundary model and links back to the current public demonstration surface.
 
 ## Repository role
 
@@ -20,28 +20,32 @@ This repository is for:
 - bounded examples;
 - public documentation for the external admission model.
 
-It is not a claim that every public GitHub artifact is wired to the installed authority.
+It is not a commercial execution service, checkout surface, customer runtime, or claim that every public GitHub artifact is wired to the installed authority.
 
 ## Related GitHub surfaces
 
 - Current Marketplace evaluation Action: https://github.com/pinfloyd/ai-admissibility-action
 - Compatibility workflow slug: https://github.com/pinfloyd/cnp-action
 - Agent + Boundary demo: https://github.com/pinfloyd/ai-admissibility-agent-boundary-demo
-- Hosted Authority candidate/reference package: https://github.com/pinfloyd/ai-admissibility-hosted-authority
+- Hosted Authority historical/reference package: https://github.com/pinfloyd/ai-admissibility-hosted-authority
 
 For new evaluation installs, use **ai-admissibility-action**. The `cnp-action` repository is retained for compatibility with existing references and is not the canonical new-install surface.
 
 ## Current boundary status
 
-The project now has a canonical installed boundary behind a controlled public access path. The public endpoint is intentionally gated; anonymous access is not equivalent to authority health.
+The project has a canonical installed boundary used for controlled public demonstration and proof. The public endpoint is intentionally gated; anonymous access is not equivalent to authority health.
 
-This repository does not expose secrets, activation tokens, private enforcement logic, or customer-specific production bindings.
+This repository does not expose secrets, activation tokens, private enforcement logic, payment infrastructure, or customer-specific production bindings.
 
-## Commercial / access route
+## Collaboration
 
-[Request access](https://ai-admissibility.com/request)
+The website and GitHub repositories are public showcase and demonstration surfaces only.
 
-GitHub is not checkout. Access, qualification, and any customer-specific deployment remain controlled outside the public repositories.
+They are not used to sell access, issue credentials, process payments, or run customer production workloads.
+
+For collaboration or deployment discussions, contact:
+
+**governance@ai-admissibility.com**
 
 ## Platform-native policy vs external admission
 
