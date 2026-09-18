@@ -1,38 +1,60 @@
-# Hosted Authority
+# Hosted Authority — historical/reference concept
 
-## Canonical status
+## Current canonical status
 
-AI Admissibility now has a canonical installed boundary behind a controlled public access path.
+AI Admissibility has a canonical installed boundary used for controlled public demonstration and proof.
 
-This document describes the **commercial and customer-specific handoff**, not an unauthenticated public authority service and not a statement that the public GitHub Actions are already wired to a production customer authority.
+Current installed authority identity:
 
-Official product surface: https://ai-admissibility.com/
+`AI_BOUNDARY_RELEASE_V1`
 
-## What a customer is asking for
+Official public surface:
 
-A customer is asking for an external execution-decision layer above workflow-local logic, with a bounded integration and an explicit admission result before protected execution.
+https://ai-admissibility.com/
 
-The initial public product focus includes GitHub Actions / CI/CD, but the underlying model is broader than one platform.
+Canonical live demonstration:
 
-## Access path
+https://ai-admissibility.com/canonical-pilot/
 
-1. Understand the public architecture and evaluation surfaces.
-2. Request access.
-3. Confirm the intended protected workflow and authority boundary.
-4. Establish the required access / identity / policy binding.
-5. Validate DENY and ALLOW behavior for the agreed integration.
-6. Deliver the agreed access or deployment package.
+This repository is not the installed runtime and does not provide public customer authority access.
 
-## Important distinctions
+## Historical context
 
-- The canonical installed boundary is not this Markdown document or this repository.
-- A signed ALLOW decision is not itself execution.
-- Anonymous rejection by the public gate is expected behavior, not evidence that the boundary is down.
-- Public Marketplace evaluation is not a customer-specific production no-bypass guarantee.
-- GitHub is not checkout.
+Earlier project stages used the term **Hosted Authority** for a proposed commercial or customer-specific authority service.
 
-## Request access
+That historical design line is retained for reference, but it is not the current public product contract.
 
-[Request access](https://ai-admissibility.com/request)
+The current website and GitHub repositories are showcase, documentation, proof, and demonstration surfaces.
 
-This is the canonical public inquiry entry.
+They do not provide:
+
+- checkout or payment processing;
+- automatic credential issuance;
+- an unauthenticated production authority endpoint;
+- customer production execution.
+
+## What remains technically relevant
+
+The architectural idea remains the same:
+
+- execution intent is formed by a requester;
+- a separate authority evaluates admission before protected execution;
+- the authority returns a signed ALLOW or DENY decision;
+- the integration must fail closed when admission is denied, missing, invalid, stale, expired, or unverifiable;
+- a signed ALLOW is authority to proceed under the agreed scope, not execution itself.
+
+## Public proof distinction
+
+Anonymous rejection by the public gate is expected behavior.
+
+The public identity endpoint is intentionally protected.
+
+Public Marketplace evaluation is not a customer-specific production no-bypass guarantee.
+
+## Collaboration
+
+For research, integration, collaboration, or deployment discussions:
+
+**governance@ai-admissibility.com**
+
+**No Admission = No Execution.**
