@@ -1,75 +1,38 @@
 # Hosted Authority
 
-## What this is
-Hosted Authority is the canonical commercial handoff above the public GitHub surfaces for teams that want one clear product outcome:
+## Canonical status
 
-**Controlled Negotiation Protocol (CNP) Gate for GitHub Actions**
+AI Admissibility now has a canonical installed boundary behind a controlled public access path.
 
-It should be understood as a controlled commercial path, not as a public self-serve service and not as a public live Hosted Authority offering.
+This document describes the **commercial and customer-specific handoff**, not an unauthenticated public authority service and not a statement that the public GitHub Actions are already wired to a production customer authority.
 
-## Who this is for
-This path is for teams that want an external execution gate above workflow-local logic for GitHub Actions, especially where risky workflow or automation changes must be stopped before CI continues.
+Official product surface: https://ai-admissibility.com/
 
-This is for buyers who want controlled negotiation protocol (cnp) control, not a generic security scanner and not architecture as an abstraction.
+## What a customer is asking for
 
-## What is being purchased
-The sellable offer is one clear outcome:
+A customer is asking for an external execution-decision layer above workflow-local logic, with a bounded integration and an explicit admission result before protected execution.
 
-**Primary outcome**
-- Block risky workflow changes before CI continues.
+The initial public product focus includes GitHub Actions / CI/CD, but the underlying model is broader than one platform.
 
-**Supporting outcome lines**
-- External execution gate for GitHub automation.
-- Stop unsafe AI / automation changes before they execute.
+## Access path
 
-The buyer is not buying "Hosted Authority" as a floating term.
-The buyer is buying a bounded commercial path to this product outcome.
+1. Understand the public architecture and evaluation surfaces.
+2. Request access.
+3. Confirm the intended protected workflow and authority boundary.
+4. Establish the required access / identity / policy binding.
+5. Validate DENY and ALLOW behavior for the agreed integration.
+6. Deliver the agreed access or deployment package.
 
-## What happens after inquiry
-1. Inquiry and qualification.
-2. Scope confirmation around the requested outcome.
-3. A bounded commercial offer.
-4. An external payment step or formal paid agreement.
-5. Delivery of the agreed license / access / package.
+## Important distinctions
 
-## Payment rail
-GitHub is not the checkout.
-GitHub is the public surface and the qualified-interest funnel.
+- The canonical installed boundary is not this Markdown document or this repository.
+- A signed ALLOW decision is not itself execution.
+- Anonymous rejection by the public gate is expected behavior, not evidence that the boundary is down.
+- Public Marketplace evaluation is not a customer-specific production no-bypass guarantee.
+- GitHub is not checkout.
 
-Payment happens through the external commercial step after Hosted Authority handoff, qualification, and scope confirmation.
-
-No public self-serve checkout is claimed here.
-No Marketplace-ready checkout is claimed here.
-No public live Hosted Authority service is claimed here.
-
-## Delivery rule
-Delivery is not abstract consulting.
-Delivery means a defined license / access / package handoff after payment or formal agreement.
-
-Delivery is considered fulfilled when the agreed package or access package has been issued to the buyer under the bounded commercial path.
-
-## Current route
-1. Understand the proof surface in `README.md`.
-2. Understand the Action / product surface separately.
-3. Use this page as the single commercial handoff path.
-4. Move through qualification, payment, and delivery.
-
-## What this page does not claim
-This page does not claim that Hosted Authority is already a public live service.
-This page does not claim public self-serve activation.
-This page does not claim Marketplace-ready checkout.
-This page does not replace the separate payment and delivery steps.
-
-## Commercial step
-
-For real commercial use above the public GitHub surfaces, use the Hosted Authority inquiry path:
-
-
-<!-- CNP_REQUEST_ACCESS_START -->
 ## Request access
 
 [Request access](https://ai-admissibility.com/request)
 
-This is the only canonical inquiry entry for Hosted Authority access.
-GitHub is not checkout.
-<!-- CNP_REQUEST_ACCESS_END -->
+This is the canonical public inquiry entry.

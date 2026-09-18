@@ -1,58 +1,47 @@
 # AI Admissibility Boundary
-External controlled negotiation protocol (cnp) for automated and AI-driven actions.
-Not another scanner.
-A scanner detects after the fact.
-This boundary decides whether execution may continue.
 
-## What this repository shows
-This repository is the public proof and evaluation surface for an external controlled negotiation protocol (cnp).
-It is meant to make one point clear:
-the object here is not a post-hoc detection tool and not a generic security scanner.
-The object is a separate execution decision surface above workflow-local logic.
+Public architecture, proof, and evaluation surface for an external pre-execution admission boundary.
 
-## Public surface structure
-This public surface is intentionally paired with the separate GitHub Action surface:
-- `AI Admissibility Boundary` = proof / evaluation surface
-- `cnp-action` = install / Action surface
+A scanner reports after or around execution. An admission boundary decides whether execution may continue.
 
-## Commercial path
-The commercial transition remains Hosted Authority.
-Hosted Authority is the separate written commercial path for teams that want a real execution decision layer above workflow execution.
+**No Admission = No Execution.**
 
-## Inquiry path
-The inquiry path remains singular and controlled.
-If a team wants real use rather than only proof or evaluation, the canonical next step is the Hosted Authority inquiry path.
+## Canonical source of truth
 
-## Why this distinction matters
-A scanner reports.
-An AI Admissibility Boundary decides whether execution is allowed to continue.
-That distinction is the core interpretation key for this repository.
+Official product and documentation surface: https://ai-admissibility.com/
 
-## Current reading route
-The intended route remains:
-1. understand the proof / evaluation surface;
-2. understand the separate Action surface;
-3. move to the Hosted Authority inquiry path if the team needs real use.
+This repository is not the canonical installed runtime. It documents and demonstrates the boundary model and links back to the current public product surface.
 
-## Surface references
-- Action surface: `cnp-action`
-- Hosted Authority path: `HOSTED_AUTHORITY.md`
-- Support path: `SUPPORT.md`
-- License path: `LICENSE`
+## Repository role
 
-## Current boundary
-This repository presents the proof surface and the route into a separate written commercial path.
-It does not describe Hosted Authority as a public live service.
+This repository is for:
+- architecture and terminology;
+- proof / evaluation material;
+- bounded examples;
+- public documentation for the external admission model.
 
-<!-- CNP_REQUEST_ACCESS_START -->
-## Request access
+It is not a claim that every public GitHub artifact is wired to the installed authority.
+
+## Related GitHub surfaces
+
+- Current Marketplace evaluation Action: https://github.com/pinfloyd/ai-admissibility-action
+- Compatibility workflow slug: https://github.com/pinfloyd/cnp-action
+- Agent + Boundary demo: https://github.com/pinfloyd/ai-admissibility-agent-boundary-demo
+- Hosted Authority candidate/reference package: https://github.com/pinfloyd/ai-admissibility-hosted-authority
+
+For new evaluation installs, use **ai-admissibility-action**. The `cnp-action` repository is retained for compatibility with existing references and is not the canonical new-install surface.
+
+## Current boundary status
+
+The project now has a canonical installed boundary behind a controlled public access path. The public endpoint is intentionally gated; anonymous access is not equivalent to authority health.
+
+This repository does not expose secrets, activation tokens, private enforcement logic, or customer-specific production bindings.
+
+## Commercial / access route
 
 [Request access](https://ai-admissibility.com/request)
 
-This is the only canonical inquiry entry for Hosted Authority access.
-GitHub is not checkout.
-<!-- CNP_REQUEST_ACCESS_END -->
----
+GitHub is not checkout. Access, qualification, and any customer-specific deployment remain controlled outside the public repositories.
 
 ## Platform-native policy vs external admission
 
@@ -64,10 +53,8 @@ If execution can proceed without an external allow decision, the system has poli
 
 **Surrogate Boundary Test:** Can execution proceed without an external allow decision?
 
-**No Admission = No Execution.**
-
 Learn more:
 - https://ai-admissibility.com/platform-native-policy/
 - https://ai-admissibility.com/external-admission-authority/
 - https://ai-admissibility.com/surrogate-boundary-test/
-
+- https://ai-admissibility.com/canonical-terms/
