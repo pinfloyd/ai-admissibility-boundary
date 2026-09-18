@@ -1,6 +1,11 @@
 # Support
 
-For support, clarification, or commercial questions related to AI Admissibility Boundary, use the Hosted Authority path in [`HOSTED_AUTHORITY.md`](./HOSTED_AUTHORITY.md).
+Official product and documentation surface:
 
-This repository is the public proof / evaluation surface.
-It does not describe Hosted Authority as a public live self-serve service.
+https://ai-admissibility.com/
+
+For access, deployment, or commercial questions:
+
+https://ai-admissibility.com/request
+
+This repository is a public architecture / proof / evaluation surface. It is not the canonical installed runtime and it does not expose activation tokens, secrets, or customer-specific production bindings.
